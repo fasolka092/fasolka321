@@ -1,0 +1,38 @@
+<!-- Zadanie 8: Wewnętrzny arkusz stylów -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Wewnętrzny arkusz stylów</title>
+    <style>
+        p {
+            color: green;
+            font-size: 20px;
+            font-family: Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>1. Gdzie jest wstawiany?</h1>
+    <p>Wewnętrzny arkusz stylów jest umieszczany w sekcji <code>&lt;head&gt;</code> dokumentu HTML, w znaczniku <code>&lt;style&gt;</code>.</p>
+
+    <h1>2. Składnia teoretyczna</h1>
+    <table border="1">
+        <tr>
+            <td>
+                &lt;style&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;selektor {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cecha: wartość;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                &lt;/style&gt;
+            </td>
+        </tr>
+    </table>
+
+    <h1>3. Jakie mogą być selektory?</h1>
+    <p>Selektory mogą być proste (np. <code>p</code>), złożone, atrybutowe, potomne, pseudoklasowe, pseudoelementy itp.</p>
+
+    <h1>4. Jakie mogą być cechy i wartości?</h1>
+    <p>Cechy to np. <code>color</code>, <code>font-size</code>, <code>background-color</code>. Wartości to np. <code>red</code>, <code>20px</code>, <code>#ff0000</code>.</p>
+</body>
+</html>

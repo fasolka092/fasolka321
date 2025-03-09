@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+<title>Budowa selektora</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .box {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>10. Budowa selektora</h1>
+
+    <h2>1. Wymień oraz opisz dwie części selektora</h2>
+    <p>Selektor składa się z dwóch podstawowych części:</p>
+    <ul>
+        <li><strong>Selektor</strong> – Określa, do jakich elementów HTML będzie stosowane formatowanie.</li>
+        <li><strong>Deklaracja</strong> – Definiuje właściwości i ich wartości, umieszczone w nawiasach klamrowych.</li>
+    </ul>
+
+    <h2>2. Znaczenie nawiasów klamrowych <code>{...}</code></h2>
+    <p>Nawiasy klamrowe grupują deklaracje stylów przypisane do selektora. Wszystkie cechy formatowania muszą być zawarte wewnątrz tych nawiasów.</p>
+
+    <h2>3. Opis cech</h2>
+    <p>Cechy (ang. properties) to właściwości formatowania, np. <code>color</code> (kolor tekstu), <code>font-size</code> (rozmiar czcionki).</p>
+
+    <h2>4. Opis wartości</h2>
+    <p>Wartości (ang. values) to konkretne ustawienia dla danej cechy, np. <code>color: red;</code> (tekst będzie czerwony).</p>
+
+    <h2>5. Kiedy stosujemy znak średnika (;), kiedy nie jest konieczny?</h2>
+    <p>Średnik <code>;</code> jest wymagany po każdej deklaracji, aby oddzielić kolejne właściwości. Nie jest konieczny po ostatniej deklaracji, ale zaleca się jego stosowanie dla lepszej czytelności kodu.</p>
+
+    <h2>Przykładowa składnia selektora</h2>
+    <div class="box">
+        <code>
+            p { <br>
+            &nbsp;&nbsp;color: blue;<br>
+            &nbsp;&nbsp;font-size: 16px;<br>
+            }
+        </code>
+    </div>
+
+</body>
+</html>

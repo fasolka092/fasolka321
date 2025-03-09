@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 4</title>
+    <style>
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid black; padding: 10px; text-align: left; }
+        textarea { width: 100%; height: 100px; }
+    </style>
+</head>
+<body>
+    <h1>Zadanie 4 - Sposoby podłączania CSS do kodu strony WWW</h1>
+    <table>
+        <tr><th>Metoda</th><th>Przykład</th></tr>
+        <tr>
+            <td>Zewnętrzny arkusz stylów</td>
+            <td><textarea readonly>&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</textarea></td>
+        </tr>
+        <tr>
+            <td>Wewnętrzny arkusz stylów</td>
+            <td><textarea readonly>&lt;style&gt;
+p { color: blue; font-size: 20px; }
+&lt;/style&gt;</textarea></td>
+        </tr>
+        <tr>
+            <td>Liniowy styl</td>
+            <td><textarea readonly>&lt;p style="color: red; font-size: 18px;"&gt;Przykładowy tekst&lt;/p&gt;</textarea></td>
+        </tr>
+        <tr>
+            <td>Import arkusza stylów</td>
+            <td><textarea readonly>&lt;style&gt;
+@import url("style.css");
+&lt;/style&gt;</textarea></td>
+        </tr>
+        <tr>
+            <td>Alternatywny arkusz stylów</td>
+            <td><textarea readonly>&lt;link rel="Alternate stylesheet" type="text/css" href="style.css" title="Inny styl"&gt;</textarea></td>
+        </tr>
+    </table>
+</body>
+</html>

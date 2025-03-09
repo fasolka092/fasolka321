@@ -1,0 +1,4 @@
+p {
+    color: maroon;
+    font-size: 62px; /* 60 + nr_z_dziennika, jeśli nr = 2 */
+}

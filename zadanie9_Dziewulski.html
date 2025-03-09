@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Styl zewnętrzny w HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .box {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>1. Jak wstawia się styl zewnętrzny do dokumentu HTML?</h1>
+    <p>Styl zewnętrzny wstawiany jest do dokumentu HTML za pomocą znacznika <code>&lt;link&gt;</code>, który umieszczany jest wewnątrz sekcji <code>&lt;head&gt;</code>. Znacznik ten może występować wielokrotnie, ale zaleca się stosowanie jednej głównej deklaracji stylów.</p>
+
+    <div class="box">
+        <code>&lt;link rel="stylesheet" href="style.css"&gt;</code>
+    </div>
+
+    <h1>2. Gdzie wstawiany jest styl zewnętrzny?</h1>
+    <p>Styl zewnętrzny wstawiany jest w sekcji <code>&lt;head&gt;</code> dokumentu HTML. Odpowiedzialny za to jest znacznik <code>&lt;link&gt;</code>, który może występować wielokrotnie, ale zaleca się ograniczenie do jednej głównej deklaracji.</p>
+
+    <h1>3. Najprostsza forma wstawiania stylu zewnętrznego</h1>
+    <div class="box">
+        <code>&lt;link rel="stylesheet" href="style.css"&gt;</code>
+    </div>
+
+    <h1>4. Ile arkuszy styli może być dołączonych?</h1>
+    <p>Do jednego dokumentu HTML można dołączyć wiele arkuszy styli CSS. Ważne jest, aby zachować zasadę priorytetu – style zdefiniowane później mogą nadpisywać wcześniejsze.</p>
+
+    <h1>5. Co się dzieje w przypadku konfliktów styli?</h1>
+    <p>W przypadku konfliktów (gdy ten sam styl jest definiowany w różnych arkuszach), przeglądarka stosuje zasadę <strong>kaskadowości</strong> i <strong>specyficzności</strong>.</p>
+    <ul>
+        <li>Style później załadowane nadpisują wcześniejsze.</li>
+        <li>Style o wyższej specyficzności (np. ID zamiast klasy) mają pierwszeństwo.</li>
+        <li>Style <code>!important</code> mają najwyższy priorytet.</li>
+    </ul>
+
+    <h1>6. Jak tworzyć i edytować pliki CSS w edytorze tekstowym?</h1>
+    <p>Pliki CSS można tworzyć i edytować w dowolnym edytorze tekstowym, np. Notatnik, VS Code. Tworzymy nowy plik, zapisujemy go z rozszerzeniem <strong>.css</strong> i wpisujemy reguły CSS.</p>
+
+    <h1>7. Jak tworzyć i edytować pliki CSS w edytorze wizualnym?</h1>
+    <p>Specjalne edytory CSS, jak Adobe Dreamweaver, Brackets, umożliwiają edycję CSS z podglądem na żywo.</p>
+
+    <h1>8. Jakie rozszerzenie ma plik CSS?</h1>
+    <p>Plik zewnętrznego arkusza styli posiada rozszerzenie <strong>.css</strong>.</p>
+
+    <h1>9. Zalety zewnętrznego arkusza styli:</h1>
+    <ul>
+        <li><strong>Łatwość zarządzania</strong> – zmiany w jednym pliku wpływają na cały serwis.</li>
+        <li><strong>Lepsza wydajność</strong> – pliki CSS są cache’owane, co przyspiesza ładowanie stron.</li>
+    </ul>
+
+    <h1>10. Uwagi na temat pisania w CSS</h1>
+    <ul>
+        <li>Należy stosować <code>/* komentarze */</code>.</li>
+        <li>Unikać nadmiarowego używania <code>!important</code>.</li>
+        <li>Stosować jednolitą składnię i czytelne nazwy klas.</li>
+        <li>Optymalizować kod poprzez unikanie zbędnych reguł.</li>
+    </ul>
+
+</body>
+</html>
